@@ -11,16 +11,8 @@
 
 MemoryManager::MemoryManager()
 {
-    Word temp;
-    freeFrames.push(temp)
 }
 
 void MemoryManager::pageIn(Word & item)
 {
-
-}
-
-void MemoryManager::read(Word & pageNumber)
-{
-
 }

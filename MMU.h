@@ -9,13 +9,15 @@
 
 #include <stdio.h>
 #include "Word.h"
-#include "MemoryManager.h"
-#include <array>
+
+using namespace std;
+
 
 struct TLB
 {
-    std:: array<int,16> pageNum = {0};
-    std::array <int, 16> FrameNum = {0};
+    int pageNum[16] = {0};
+    int FrameNumber[16] = {0};
+    int numEntries;
 };
 
 
@@ -30,10 +32,10 @@ public:
     int pageFaults();
     int TLBAccesses();
     int TLBFaults();
-    
-    void read(Address &addr);
+    //template <typename t>
+    void read(const Address &addr);
 
-    u_int32_t return_test();
+    //u_int32_t return_test();
 
 private:
     int pageAccessCounts_;
