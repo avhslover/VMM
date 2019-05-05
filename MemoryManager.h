@@ -18,7 +18,8 @@ class MemoryManager
 public:
     MemoryManager();
     void pageIn(Word & item);
-    void read(Word & pageNumber);
+    ~MemoryManager();
+    
 private:
     std::queue<Word> freeFrames;
 };

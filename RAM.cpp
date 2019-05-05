@@ -17,3 +17,8 @@ Ram::Ram()
 void Ram::read()
 {
 }
+
+Ram::~Ram()
+{
+    
+}

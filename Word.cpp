@@ -12,33 +12,30 @@
 u_int32_t Address::address()
 {
     /*
-        not much is done here, this is just holding the 
-        address
-    */
-    return value_;
+        this simply returns the value from the
+        word structure in the header
+     */
+    return  value_;
 }
- //a = a << 3; this bit shifts left 3 so if a was 00000001
- // not this becomes 00001000
 
 Word Address::displacement()
 {
-    Word temp = {value_&255};
-
-    temp.value_ = (value_ & 256);
-
+    Word temp;
     return temp;
 }
+
 Word Address::frame()
 {
-    Word temp={(value_>>8)&255};
-
+    /*
+        don't touch this. i tried modifying it and got a crap load of errors.
+        just leave as is please
+     */
+    Word temp = { (value_>>8) & 255};
     return temp;
 }
-Word Address::page()
+
+Word page()
 {
-    Word temp = frame();
-    /*
-        this is going to be bits 15 - 8 from the pdf document
-    */
+    Word temp;
     return temp;
 }

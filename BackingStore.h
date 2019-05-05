@@ -23,6 +23,6 @@ public:
     
     ~BackingStore();
 private:
-    std::fstream file;
+    std::ifstream file;
 };
 #endif /* BackingStore_hpp */

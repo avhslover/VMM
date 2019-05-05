@@ -14,5 +14,40 @@ void test_MMU() {
     
     MemManagerUnit.read(logAddr);
 
-    cout << MemManagerUnit.return_test() << endl;
+    //cout << MemManagerUnit.return_test() << endl;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

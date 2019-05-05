@@ -23,6 +23,8 @@ class Ram
 public:
     Ram();
     void read();
+    ~Ram();
+    
 private:
     Word items[256];
     Status Statuses[256];
